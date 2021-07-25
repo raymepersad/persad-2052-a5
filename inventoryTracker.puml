@@ -1,0 +1,38 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+stockInventory --> INVENTORY_SIZE
+
+class stockInventory{
+addNewitem
+removeItem
+editSerial
+saveItems
+ }
+
+class sortItem{
+sortValue
+sortSerial
+sortName
+}
+
+class search{
+searchSerial
+searchName
+}
+
+ class INVENTORY_SIZE{
+ assign -> String companyName;
+ assign -> String stockRating --> serialNumber
+ assign -> int price;
+ assign -> int numberOfShares;
+
+ return -> number of items
+}
+
+
+
+
+
+@enduml

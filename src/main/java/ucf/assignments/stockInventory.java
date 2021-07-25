@@ -31,7 +31,7 @@ public class stockInventory {
                 System.out.println ("Numbers of shares: ");
                 int numberShares= console.nextInt();
 
-                stocks [i]= new stock(stockName, stockRatings, stockPrice, numberShares);
+                stocks [i]= new stock(stockName, stockRating, stockPrice, numberShares);
             }
 
             public static void main (String [] args){

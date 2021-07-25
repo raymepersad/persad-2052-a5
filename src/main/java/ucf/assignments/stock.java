@@ -10,11 +10,11 @@ public class stock {
             return companyName;
         }
 
-        public int getStockRating() {
+        public String getStockRating() {
             return stockRating;
         }
 
-        public String getPrice() {
+        public int getPrice() {
             return price;
         }
 
@@ -22,7 +22,7 @@ public class stock {
             return numberOfShares;
         }
 
-        public Stock(String companyName, String stockRating, int price, int numberOfShares) {
+        public stock(String companyName, String stockRating, int price, int numberOfShares) {
             super();
             this.companyName = companyName;
             this.stockRating = stockRating;
