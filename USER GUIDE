@@ -1,0 +1,88 @@
+INVENTORY TRACKER WITH SPACE FOR 150 ITEMS
+inventory items have a value representing its monetary value in US dollars
+inventory items have a unique serial number in the format of XXXXXXXXXX where X can be either a letter or digit
+inventory items have a name between 2 and 256 characters in length (inclusive)
+user can add a new inventory item or remove existing item
+Error message displays if the user enters an existing serial number for the new item
+
+*************************************************************************************************************************
+
+4 MENUS: 
+HELP 
+MAIN
+SEARCH
+SAVE
+
+HELP MENU:
+-DISPLAY HELP
+-INVENTORY HELP
+-SETTINGS HELP
+
+
+DISPLAY HELP
+ALL SETTINGS PERTAINABLE TO DISPLAY OF THE INVENTORY
+HOW TO:
+SORT
+DIFFERENT COLORS/THEMES (IN PROGRESS)
+
+INVENTORY HELP:
+ALL SETTINGS RELATING TO THE INVENTORY
+HOW TO:
+ADD/DELETE SETTINGS
+CLEAR LIST
+
+ERROR MESSAGES
+001: WRONG ITEM
+002: CANT ADD ITEM
+003: ITEM ALREADY EXISTS
+004: INCORRECT SERIAL NUMBER
+
+SETTINGS HELP
+ALL SETTINGS PERTAINING TO ITEM AND INVENTORY SETTINGS
+ADD/DELETE ITEM DESCRIPTION
+CHANGE ITEM VALUE
+CHANGE ITEM NAME
+
+*************************************************************************
+MAIN MENU
+DISPLAY INVENTORY: SHOWS ALL INVENTORY ITEMS WITH DESCRIPTION AND VALUE WITH SERIAL NUMBER
+
+EDIT INVENTORY:
+Allows user to edit the value of an existing inventory item
+Allows user to edit the serial number of an existing inventory item
+
+SORT INVENTORY:
+Allows user to sort the inventory items by value
+Allows user to sort inventory items by serial number
+Allows user to sort inventory items by name
+
+ITEM SETTINGS:
+Allows user to edit the name of an existing inventory item
+
+
+
+INVENTORY SETTINGS:
+
+
+*******************************************************************************************************************
+SEARCH MENU:
+Allows user to search for an inventory item by serial number
+Allows user to search for an inventory item by name
+
+
+*******************************************************************************************************************
+
+SAVE SETTINGS
+
+Allows the user to save their inventory items to a file
+Select the file format from among the following set of options: TSV (tab-separated value), HTML, JSON
+
+TSV files list one inventory item per line and end with the extension .txt
+HTML end with the extension .html
+
+inventory items appear as a table when the HTML file is rendered
+
+The user provides the file name and file location of the file to save
+Allows the user to load inventory items from a file that was previously created by the application.
+The user provides the file name and file location of the file to load
+
