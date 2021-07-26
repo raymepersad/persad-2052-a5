@@ -1,21 +1,27 @@
 package ucf.assignments;
 
 import java.util.Scanner;
+import java.util.*;
 
 public class stockInventory {
-    import java.util.*;
 
-    public class StockInvetory {
+    public stockInventory(String stockName, String stockRating, int stockPrice, int numberShares, String serialNumber) {
+    }
 
-        private static final int INVENTORY_SIZE = 100;
+    public class StockInventory {
+
+        private static final int INVENTORY_SIZE = 150;
         private stock [] stocks;
 
-        public StockInvetory() {
+        public StockInventory() {
             stocks = new stock [INVENTORY_SIZE];
 
         }
 
-        private static void StockInventory() {
+        private static void StockInventory()
+        {
+            stockInventory fallInventory;
+
             for (int i = 0; i<INVENTORY_SIZE; i++){
                 Scanner console = new Scanner(System.in);
 
@@ -29,15 +35,21 @@ public class stockInventory {
                 int stockPrice = console.nextInt();
 
                 System.out.println ("Numbers of shares: ");
-                int numberShares= console.nextInt();
+                int numberShares = console.nextInt();
 
-                stocks [i]= new stock(stockName, stockRating, stockPrice, numberShares);
+                System.out.println ("The Serial Number Is: ");
+                String serialNumber = console.next();
+
+                fallInventory [i]= new stockInventory(stockName, stockRating, stockPrice, numberShares, serialNumber);
             }
 
-            public static void main (String [] args){
+            public static void main(String[] args)
+            {
                 StockInventory();
 
 
 
             }
+}
+    }
 }
